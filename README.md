@@ -1,2 +1,2 @@
 # app
-Dupix.art app for mobile devicews.
+Dupix.art app for mobile devices.
