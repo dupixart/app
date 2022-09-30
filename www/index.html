@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <title>Dupix</title>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <style type="text/css">
+        .center-screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        }
+        .app{
+
+        }
+        .non-visible{
+            display: none;
+        }
+        .font-1{
+            font-family: 'Ubuntu';
+            font: 5vh Ubuntu;
+        }
+        .font-0{
+            font-family: 'Ubuntu';
+            font: 1vh Ubuntu;
+        }
+        .another-center{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        }
+        </style>
+    </head>
+    <body>
+        <div class="app">
+            <div class="center-screen" id="splashscreen">
+                <img src="img/logo.png" style="width: 50%; height: 50%;">
+            </div>
+            <div class="non-visible font-0 another-center" id="EULA">
+                <h1 style="font-size: 5vh;">Dupix</h1>
+                <br>
+                <p style="font-size:3vh;">Чтобы продолжить, вы должны принять пользовательское соглашение Dupix.</p>
+                <div id="eula-block" style="font-size: 3vh;" onclick="EULAgreeed()">
+                <input type="checkbox" id="eula-checkbox" name="" style="width: 3vh; height: 3vh;">    
+                <label for="eula-checkbox" style="font-size: 3vh;">Я принимаю текущее пользовательское соглашение</label>
+                </div>
+            </div>
+        <div id="app" class="non-visible">
+            
+<iframe src="https://dupix.art/index_mobile.php" style="width: 100%; height: 100%; min-height: 100%; min-width: 100%; position: absolute; left: 0; top: 0; border: none;"></iframe>
+        </div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

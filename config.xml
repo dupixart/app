@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phototk.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Dupix</name>
+    <description>Dupix - Для тех, кто ищет и создаёт.</description>
+    <author email="support@dupix.art" href="https://dupix.art">
+        Dupix
+    </author>
+    <content src="index.html" />
+    <icon src="icon.png" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+</widget>
