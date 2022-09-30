@@ -9,21 +9,17 @@ on:
   pull_request:
     branches: [ "main" ]
 
-jobs: 
-runs-on: ubuntu-latest
+jobs:
   build:
+
+    runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
-      - uses: jirutka/setup-alpine@v1
-        with:
-          branch: v3.15
-
-      - run: cat /etc/alpine-release
-        shell: alpine.sh {0}
-
       - name: Use oxr463/setup-cordova
         uses: oxr463/setup-cordova@0.0.3
         with:
