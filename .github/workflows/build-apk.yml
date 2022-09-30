@@ -33,14 +33,8 @@ jobs:
       - name: Install Cordova
         run: npm install -g cordova
 
-      - name: Install Vue
-        run: npm install -g @vue/cli@5.0.1
-
       - name: Install app dependencies
-        run: npm install
-
-      - name: Generate Build
-        run: npm run build
+        run: npm i
 
       - name: Fixing Android Build Tool Issue
         run: |
